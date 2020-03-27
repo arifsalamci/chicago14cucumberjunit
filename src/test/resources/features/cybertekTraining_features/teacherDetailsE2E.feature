@@ -1,5 +1,6 @@
 Feature: Teacher Details End to End for UI vs APIx
 
+  @e2e
   Scenario Outline: UI vs API cross data validation
     Given user gets teacher at "<resource>"
     And user goes to cybertek training application
@@ -11,7 +12,7 @@ Feature: Teacher Details End to End for UI vs APIx
       | /teacher/2625 | 2625      |
       | /teacher/2761 | 2761      |
 
-  @e2e
+  
   Scenario Outline: UI vs API cross data validation with name
     Given user gets teacher at "<resource>"
     And user goes to cybertek training application
